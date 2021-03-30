@@ -1,0 +1,23 @@
+.tab {
+	border: 1px solid $border-color;
+	.tab-header {
+		display: flex;
+		border-bottom: 1px solid $border-color;
+		.tab-title {
+			padding: $grid-gutter-width;
+			cursor: pointer;
+			&.active {
+				background-color: $border-color;
+			}
+		}
+	}
+	.tab-body {
+		.tab-content {
+			display: none;
+			padding: $grid-gutter-width;
+			&.active {
+				display: block;
+			}
+		}
+	}
+}

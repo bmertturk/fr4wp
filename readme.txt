@@ -1,0 +1,1 @@
+* Fancybox' da scss olmadığı için @fancyapps/fancybox/dist/jquery.fancybox.min.css dosyasını src/fancbox.scss içerisine kopyalamak ve içerisindeki max( ları Max( ile değiştirip import etmek gerekiyor.

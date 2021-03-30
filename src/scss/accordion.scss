@@ -1,0 +1,14 @@
+.accordion {
+	.accordion-content {
+		.accordion-header {
+			padding: $grid-gutter-width;
+			font-size: 2rem;
+			background-color: $border-color;
+			cursor: pointer;
+		}
+		.accordion-body {
+			padding: $grid-gutter-width;
+			display: none;
+		}
+	}
+}
