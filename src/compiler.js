@@ -22,11 +22,6 @@ sass.render({
 	fs.writeFileSync(cssPath + ".map", result.map, 'utf8');
 });
 
-
-for(let i = 0;i < fileList.compiled.length;i++) {
-	files.push(fs.readFileSync(fileList.compiled[i], 'utf8'));
-}
-
 for(let i = 0;i < fileList.apps.length;i++) {
 	files.push(babel.transformSync(fs.readFileSync(fileList.apps[i], 'utf8'), {
 		"presets": [

@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="dist/style.css">
+	<script src="dist/vendor.js" defer></script>
 	<script src="dist/main.js" defer></script>
 </head>
 <body>
@@ -48,6 +49,179 @@
 		<div class="accordion-content">
 			<div class="accordion-header">dsadsa</div>
 			<div class="accordion-body">dsadsa</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<form action="">
+					<div class="form-input">
+						<label for="text">Text</label>
+						<input type="text" id="text" value="Form">
+					</div>
+					<div class="form-input">
+						<label for="password">Password</label>
+						<input type="password" value="Form" id="password">
+					</div>
+					<div class="form-input">
+						<label for="email">E-Mail</label>
+						<input type="email" value="Form" id="email">
+					</div>
+					<div class="form-input">
+						<label for="number">Number</label>
+						<input type="number" value="555" id="number">
+					</div>
+					<div class="form-input">
+						<label for="tel">Tel</label>
+						<input type="tel" value="555" id="tel">
+					</div>
+					<div class="form-input">
+						<div class="form-checkbox">
+							<input type="checkbox" id="checkbox">
+							<label for="checkbox">Checkbox</label>
+						</div>
+					</div>
+					<div class="form-input">
+						<div class="form-radio">
+							<input type="radio" name="radio" id="radio">
+							<label for="radio">Radio</label>
+						</div>
+						<div class="form-radio">
+							<input type="radio" id="radio2" name="radio" checked>
+							<label for="radio2">Radio</label>
+						</div>
+					</div>
+					<div class="form-input">
+						<div class="form-select">
+							<select name="" id="">
+								<option value="">Option 1</option>
+								<option value="">Option 1</option>
+								<option value="">Option 1</option>
+								<option value="">Option 1</option>
+								<optgroup label="Option Grp">
+									<option value="">Option Grp</option>
+									<option value="">Option Grp</option>
+									<option value="">Option Grp</option>
+									<option value="">Option Grp</option>
+								</optgroup>
+							</select>
+						</div>
+					</div>
+					<div class="form-input">
+						<label for="" class="custom-file">
+							<input type="file">
+							<span><span></span></span>
+							<button class="btn a-btn">Dosya Seç</button>
+						</label>
+					</div>
+					<div class="form-input">
+						<button class="btn a-btn">Button</button><button class="btn z-btn">Button</button>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-4">
+				<form action="">
+					<div class="form-input">
+						<label for="text">Text</label>
+						<input type="text" id="text" disabled value="Form">
+					</div>
+					<div class="form-input">
+						<label for="password">Password</label>
+						<input type="password" id="password" disabled value="Form">
+					</div>
+					<div class="form-input">
+						<label for="email">E-Mail</label>
+						<input type="email" id="email" disabled value="Form">
+					</div>
+					<div class="form-input">
+						<label for="number">Number</label>
+						<input type="number" id="number" disabled value="555">
+					</div>
+					<div class="form-input">
+						<label for="tel">Tel</label>
+						<input type="tel" id="tel" disabled value="555">
+					</div>
+					<div class="form-input">
+						<div class="form-checkbox">
+							<input type="checkbox" id="checkbox" disabled>
+							<label for="checkbox">Checkbox</label>
+						</div>
+					</div>
+					<div class="form-input">
+						<div class="form-radio">
+							<input type="radio" name="radio" id="radio" disabled>
+							<label for="radio">Radio</label>
+						</div>
+						<div class="form-radio">
+							<input type="radio" id="radio2" name="radio" checked disabled>
+							<label for="radio2">Radio</label>
+						</div>
+					</div>
+					<div class="form-input">
+						<div class="form-select">
+							<select name="" id="" disabled>
+								<option value="">Option 1</option>
+								<option value="">Option 1</option>
+								<option value="">Option 1</option>
+								<option value="">Option 1</option>
+								<optgroup label="Option Grp">
+									<option value="">Option Grp</option>
+									<option value="">Option Grp</option>
+									<option value="">Option Grp</option>
+									<option value="">Option Grp</option>
+								</optgroup>
+							</select>
+						</div>
+					</div>
+					<div class="form-input">
+						<label for="" class="custom-file">
+							<input type="file" disabled>
+							<span><span></span></span>
+							<button class="btn a-btn">Dosya Seç</button>
+						</label>
+					</div>
+					<div class="form-input">
+						<button class="btn a-btn" disabled>Button</button>
+						<button class="btn z-btn" disabled>Button</button>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-4">
+				<form action="">
+					<div class="form-input">
+						<label for="text">Text</label>
+						<input type="text" id="text" readonly value="Form">
+					</div>
+					<div class="form-input">
+						<label for="password">Password</label>
+						<input type="password" id="password" readonly value="Form">
+					</div>
+					<div class="form-input">
+						<label for="email">E-Mail</label>
+						<input type="email" id="email" readonly value="Form">
+					</div>
+					<div class="form-input">
+						<label for="number">Number</label>
+						<input type="number" id="number" readonly value="555">
+					</div>
+					<div class="form-input">
+						<label for="tel">Tel</label>
+						<input type="tel" id="tel" readonly value="555">
+					</div>
+					<div class="form-input">
+						<div class="form-checkbox">
+							<input type="checkbox" id="checkbox" readonly>
+							<label for="checkbox">Checkbox</label>
+						</div>
+					</div>
+					<div class="form-input">
+						<div class="form-radio">
+							<input type="radio" id="radio" readonly>
+							<label for="radio">Radio</label>
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
 </body>
