@@ -1,0 +1,185 @@
+.form-input	{
+	margin-bottom: $spacer * 2;
+	> label {
+		display: block;
+		margin-bottom: $spacer;
+	}
+}
+
+.form-block {
+	width: 100%;
+	display: block;
+}
+
+input {
+	&[type="text"],
+	&[type="password"],
+	&[type="email"],
+	&[type="number"],
+	&[type="tel"] {
+		height: 4rem;
+		border: 1px solid $border-color;
+		outline: 0;
+		padding: $spacer;
+		font-size: inherit;
+		font-family: inherit;
+		&:not(:disabled) {
+			&:focus,
+			&:active {
+				border-color: $black;
+			}
+		}
+		&:disabled {
+			background-color: $border-color;
+		}
+	}
+}
+
+.form-checkbox,
+.form-radio {
+	position: relative;
+	margin-bottom: $spacer;
+	input {
+		display: none;
+		+ label {
+			padding-left: 2rem;
+			cursor: pointer;
+			display: block;
+			position: relative;
+			line-height: 1.6rem;
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 1.6rem;
+				height: 1.6rem;
+				background-color: #fff;
+				border: 1px solid $border-color;
+			}
+		}
+		&:checked {
+			+ label {
+				&:after {
+					content: '';
+					width: 1rem;
+					height: 1rem;
+					position: absolute;
+					left: .3rem;
+					top: .3rem;
+					background-color: $a-color;
+				}
+			}
+		}
+		&:disabled {
+			+ label {
+				opacity: 0.6;
+			}
+		}
+	}
+}
+
+.form-radio {
+	input {
+		+ label {
+			&:before,
+			&:after {
+				border-radius: 50%;
+			}
+		}
+	}
+}
+
+.form-select {
+	select {
+		border: 1px solid $border-color;
+		outline: 0;
+		padding: 0 $spacer;
+		font-size: inherit;
+		font-family: inherit;
+		height: 4rem;
+	}
+}
+
+.btn {
+	height: 4rem;
+	padding: 0 $spacer * 2;
+	font-size: inherit;
+	font-weight: 700;
+	border: none;
+	outline: 0;
+	transition: $transition-base;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	&.a-btn {
+		background-color: $a-btn-bg;
+		color: $a-btn-tx;
+		&:not(:disabled) {
+			&:hover,
+			&:focus {
+				background-color: $a-btn-bg-hv;
+				color: $a-btn-tx-hv;
+			}	
+		}
+	}
+	&.z-btn {
+		background-color: $z-btn-bg;
+		color: $z-btn-tx;
+		&:not(:disabled) {
+			&:hover,
+			&:focus {
+				background-color: $z-btn-bg-hv;
+				color: $z-btn-tx-hv;
+			}
+		}
+	}
+	&:disabled {
+		opacity: 0.6;
+	}
+}
+
+label.custom-file {
+	width: 100%;
+    height: 4rem;
+    display: flex;
+	position: relative;
+	margin-bottom: 0;
+	input {
+		cursor: pointer;
+		position: absolute;
+		height: 100%;
+		z-index: 2;
+		width: 100%;
+		margin: 0;
+		opacity: 0;
+		+ span {
+			flex: 1 0 0;
+			max-width: 100%;
+			display: flex;
+			align-items: center;
+			padding: 0 $spacer;
+			min-width: 0;
+			border: 1px solid $border-color;
+			border-right: none;
+			> span {
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			+ .btn {
+				flex: 0 0 auto;
+				max-width: none;
+			}
+		}
+		&:disabled {
+			+ span {
+				opacity: 0.6;
+				+ .btn {
+					opacity: 0.6;
+				}
+			}
+		}
+	}
+}

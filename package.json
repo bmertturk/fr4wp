@@ -1,0 +1,32 @@
+{
+  "name": "fr4wp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch --style=compressed src/scss/style.scss:dist/style.css",
+    "vendor": "node src/vendor.js",
+    "start": "nodemon src/compiler.js -e scss,js --ignore \"dist/*.*\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@fancyapps/fancybox": "^3.5.7",
+    "bootstrap": "^4.6.0",
+    "daterangepicker": "^3.1.0",
+    "jquery": "^3.5.1",
+    "jquery-mask-plugin": "^1.14.16",
+    "jquery-validation": "^1.19.3",
+    "moment": "^2.29.1",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7",
+    "reset-css": "^5.0.1",
+    "slick-slider": "^1.8.2",
+    "terser": "^5.5.1",
+    "toastr": "^2.1.4"
+  }
+}

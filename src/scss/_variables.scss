@@ -1,0 +1,25 @@
+$default-font: "Arial";
+$default-font-size: 1.2rem;
+
+$white: #ffffff;
+$black: #000000;
+
+$border-color: #dddddd;
+$a-color: #ffcc00;
+$a-color-hover: #dd9900;
+$z-color: #cccccc;
+$z-color-hover: #aaaaaa;
+
+$transition-base: 0.2s;
+$radius-base: .4rem;
+$shadow-base: 0 0 10px 0 rgba($black, 0.15);
+
+$a-btn-bg: $a-color;
+$a-btn-tx: $black;
+$a-btn-bg-hv: $a-color-hover;
+$a-btn-tx-hv: $black;
+
+$z-btn-bg: $z-color;
+$z-btn-tx: $black;
+$z-btn-bg-hv: $z-color-hover;
+$z-btn-tx-hv: $black;

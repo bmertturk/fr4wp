@@ -1,0 +1,19 @@
+.accordion {
+	.accordion-content {
+		.accordion-header {
+			padding: $spacer * 2;
+			cursor: pointer;
+			font-weight: 700;
+			border-bottom: 1px solid $border-color;
+		}
+		.accordion-body {
+			padding: $spacer * 2;
+			display: none;
+		}
+		&.active {
+			.accordion-header {
+				background-color: $border-color;
+			}
+		}
+	}
+}
